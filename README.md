@@ -8,23 +8,21 @@ Requirements
 - run "python run_pretrained_interactive.py"
   
 Notes
-Use arrow keys and A and S keys for the A and B buttons
-You can pause the AI inputs by editing the "agent_enabled.txt"
-pokemon.gb file must be in main directory, remember to be in the baselines directory
+Use arrow keys and A and S keys for the A and B buttons.
+You can pause the AI inputs by editing the "agent_enabled.txt".
+pokemon.gb file must be in main directory, remember to be in the baselines directory.
 
 # Train the Model  
-
-This version still needs some tuning, but it can clear the first gym in a small fraction of the time and compute resources. It can work with as few as 16 cores and ~20G of RAM. This is the place for active development and updates! 
-
+This version is not finished yet, but it is able to get to and clear the first gym. Compatible with at least 165 cores and around 20 G of RAM.
 1. Previous steps 1-3
 2. Run:  
 ```python run_baseline_parallel_fast.py```
 
-Current state of each game rendered in images in session directory
-Run "tensorboard --logdir" to track the progress in tensorboard, go to "localhost:6006" to view metrics
+Current state of each game rendered in images in session directory.
+Run "tensorboard --logdir" to track the progress in tensorboard, go to "localhost:6006" to view metrics.
 
 Map visualization code can be found in "visualization" directory.
 
 Libraries Used
-PyBoy
-StableBaselines 3
+- PyBoy
+- StableBaselines 3
